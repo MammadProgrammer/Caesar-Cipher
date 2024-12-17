@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayWW"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="373dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="60dp"
+        android:text=""
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:hint="Enter Text To Get Code"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grayWWW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/black"
+        android:text="Reset"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input" />
+
+    <Button
+        android:id="@+id/code"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/black"
+        android:text="Encrypt"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/reset"
+        app:layout_constraintTop_toBottomOf="@+id/input" />
+
+    <Button
+        android:id="@+id/text"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/black"
+        android:text="Decrypt"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/code"
+        app:layout_constraintTop_toBottomOf="@+id/input" />
+
+
+    <EditText
+        android:id="@+id/shift"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:hint="Shift"
+        android:text=""
+        android:textColorHint="@color/grayWWWW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code" />
+
+    <EditText
+        android:id="@+id/output1"
+        android:layout_width="373dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="50dp"
+        android:text=""
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:hint="Output Of Your Input"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grayWWW"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shift"
+        tools:layout_editor_absoluteY="528dp" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Exit"
+        android:textColor="@color/Red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output1"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="720dp" />
+
+    <Button
+        android:id="@+id/copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/shift"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:backgroundTint="@color/black"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
